@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Создание инвестиции</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+<div class="container">
+  <div class="row">
+    <div class="text-center justify-content-lg-center row">
+      <div class="page-header">
+        <h2>Создание новой инвестиции</h2>
+      </div>
+
+      <form action="" method="post" id="form_create">
+
+        <div class="form-control mb-2">
+          <label class="form-label">ФИО инвестора</label><span class="error" id="err_fio"> *</span>
+          <textarea class="form-control" id="text_fio" style="height:15px;"></textarea>
+        </div>
+
+        <div class="form-select form-select-sm mb-2">
+          <label>Стартап</label><span class="error" id="err_startup"> *</span>
+          <select class="form-control" id="label_startup">
+            <option value="0" selected>Alpha</option>
+            <option value="1">Beta</option>
+            <option value="2">Gamma</option>
+          </select>
+        </div>
+
+        <div class="form-select form-select-sm mb-2">
+          <label>Тип инвестирования</label>
+          <select class="form-control" id="label_type">
+            <option value="milestones" selected>По этапам (milestones)</option>
+            <option value="single">Единовременное</option>
+            <option value="convertible">Конвертируемый займ</option>
+            <option value="safe">SAFE</option>
+          </select>
+        </div>
+
+        <div class="form-control mb-2">
+          <label class="form-label">Сумма инвестиции (₽)</label><span class="error" id="err_amount"> *</span>
+          <input class="form-control" id="text_amount" placeholder="Например: 500000">
+        </div>
+
+        <div class="row m-1">
+          <input class="btn btn-success btn-lg" type="submit" id="btn_submit" value="Подтвердить">
+        </div>
+        <div class="row m-1">
+          <button class="btn btn-danger btn-lg" type="reset" id="btn_reset">Сбросить значения по умолчанию</button>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</div>
+
+<script src="src/create.js"></script>
+</body>
+</html>

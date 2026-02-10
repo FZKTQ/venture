@@ -1,0 +1,16 @@
+.header{
+  background-color:green;
+  font-weight:bold;
+  color:black;
+  text-align:center;
+  padding:10px;
+}
+.left{ background-color:lightgray; }
+.middle{ background-color:white; text-align:center; }
+.right{ background-color:lightgray; }
+.footer{
+  background-color:orange;
+  text-align:center;
+  font-style:italic;
+  padding:10px;
+}

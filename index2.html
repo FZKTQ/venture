@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <title>Панель управляющего фондом</title>
+</head>
+<body>
+
+<div class="page-header text-center p-3">
+  <h1>Здравствуйте, Управляющий фондом. Ниже представлен перечень стартапов и заявок на финансирование!</h1>
+</div>
+
+<p class="text-center">
+  <a href="login_logout.php" class="btn btn-danger">Выйти из аккаунта</a>
+  <a href="CRUD_create.php" class="btn btn-dark">Добавить стартап</a>
+  <a href="login_user.php" class="btn btn-danger">Перейти к функциям инвестора</a>
+</p>
+
+<div class="container-fluid">
+  <h2 class="ms-2">Заявки стартапов</h2>
+
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Стартап</th>
+        <th>Отрасль</th>
+        <th>Запрос (₽)</th>
+        <th>Статус</th>
+        <th>Действия</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Alpha</td>
+        <td>FinTech</td>
+        <td>1 500 000</td>
+        <td>На рассмотрении</td>
+        <td>
+          <a href="#" class="btn-outline-dark btn"><i class="bi-eye-fill"></i></a>
+          <a href="#" class="btn-outline-dark btn"><i class="bi-pen-fill"></i></a>
+          <a href="#" class="btn-outline-dark btn"><i class="bi-trash3-fill"></i></a>
+        </td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>Beta</td>
+        <td>MedTech</td>
+        <td>3 000 000</td>
+        <td>Одобрена</td>
+        <td>
+          <a href="#" class="btn-outline-dark btn"><i class="bi-eye-fill"></i></a>
+          <a href="#" class="btn-outline-dark btn"><i class="bi-pen-fill"></i></a>
+          <a href="#" class="btn-outline-dark btn"><i class="bi-trash3-fill"></i></a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
